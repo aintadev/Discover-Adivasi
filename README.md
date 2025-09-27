@@ -9,6 +9,11 @@ Play it by:
 https://discover-adivasi.onrender.com/
 ```
 
+You can also visit it in itch.io:
+```
+https://aintadev.itch.io/discover-adivasi
+```
+
 ## What is This?
 
 Discover Adivasi is a brilliant parody of **ancestry website**  where you can build **ridiculous family trees with made-up ethnicities** and generate outrageously **fake historical records** for any name you search.

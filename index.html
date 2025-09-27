@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Adivasi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Discover Adivasi</h1>
+            <p class="tagline">Uncover your totally legitimate ancestral roots! (Probably)</p>
+        </header>
+        
+        <div class="instructions">
+            <h3>How to Play:</h3>
+            <ul>
+                <li>Add family members to build your tree</li>
+                <li>Save your tree to localStorage</li>
+                <li>Search any name to discover hilarious fake historical records</li>
+                <li>Reset to start over with a new family tree</li>
+            </ul>
+        </div>
+        
+        <div class="game-area">
+            <div class="panel">
+                <h2>Build Your Family Tree</h2>
+                <form id="family-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" placeholder="e.g., Rajiv 'MemeLord' Sharma" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="ethnicity">Family Ethnicity</label>
+                        <select id="ethnicity" required>
+                            <option value="">Select an ethnicity</option>
+                            <option value="Punjabi">Punjabi (Butter Chicken Connoisseur)</option>
+                            <option value="Tamil">Tamil (Filter Coffee Expert)</option>
+                            <option value="Bengali">Bengali (Fish & Rosogolla Lover)</option>
+                            <option value="Gujarati">Gujarati (Dhokla Diplomat)</option>
+                            <option value="Marathi">Marathi (Vada Pav Specialist)</option>
+                            <option value="Mallu">Mallu (Coconut Crusader)</option>
+                            <option value="Bihari">Bihari (Litti Chokha Champion)</option>
+                            <option value="Rajasthani">Rajasthani (Desert Dweller)</option>
+                            <option value="Northeastern">Northeastern (Bamboo Boss)</option>
+                            <option value="Kashmiri">Kashmiri (Pashmina Pioneer)</option>
+                            <option value="Sindhi">Sindhi (Papad Perfectionist)</option>
+                            <option value="Uttarakhandi">Uttarakhandi (Mountain Mystic)</option>
+                            <option value="Goan">Goan (Beach Bum & Feni Fanatic)</option>
+                            <option value="Cosmic">Cosmic Being (Alien Ancestry)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="details">Family Details</label>
+                        <textarea id="details" rows="3" placeholder="e.g., Famous for creating the world's spiciest curry or inventing the 'thug life' meme"></textarea>
+                    </div>
+                    
+                    <button type="submit">Add to Family Tree</button>
+                </form>
+                
+                <div class="button-group">
+                    <button id="save-btn" class="save-btn">Save Family Tree</button>
+                    <button id="reset-btn" class="reset-btn">Reset Family Tree</button>
+                </div>
+                
+                <div class="tree-header">
+                    <h3>Your Family Tree</h3>
+                    <span class="tree-count" id="tree-count">0 members</span>
+                </div>
+                <div class="family-tree" id="family-tree">
+                    <p class="tree-placeholder">Your family tree will appear here. Start adding members!</p>
+                </div>
+            </div>
+            
+            <div class="panel">
+                <h2>Search Historical Records</h2>
+                <p>Type any name to discover their totally real historical significance!</p>
+                
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="e.g., Babu Rao, Chutki, or anyone really...">
+                    <button id="search-btn">Search</button>
+                </div>
+                
+                <div class="result-container" id="result-container">
+                    <h3 class="result-title" id="result-title"></h3>
+                    <div class="result-details" id="result-details"></div>
+                    <div class="result-source" id="result-source"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="notification" id="notification"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
